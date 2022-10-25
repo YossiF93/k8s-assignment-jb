@@ -125,7 +125,6 @@
     - Pod named `redis-storage-{{yourname}}`
     - Pod `redis-storage-{{yourname}}` uses Volume type of `emptyDir`
     - Pod `redis-storage-{{yourname}}` uses `volumeMounts` with `mountPath = /data/redis`
-    - [Ref Docs: configure-a-volume-for-a-pod](https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/#configure-a-volume-for-a-pod)
 
     ```commandline
     k run redis-storage-yossi-f \
@@ -160,7 +159,6 @@
     ```
 
 12. Create this pod and attached it a persistent volume called `pv-1`
-    - [Ref Docs: persistentvolumeclaims](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)
 
     ```commandline
     k run pv-yossi-f \
